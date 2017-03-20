@@ -1,0 +1,203 @@
+/* Color Pallete for Project from:  https://coolors.co/fffbfe-a3bbad-2c8c66-3f4b3b-44633f
+
+White       =  #FFFBFE  
+gray-green  =  #A3BBAD
+Green       =  #2C8C66
+Olive       =  #3F4B3B
+Army Green  =  #44633f
+
+*/
+
+/* Fonts  use - font-family: 'Press Start 2P', cursive*/
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans|Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+
+ 
+
+
+/*  Basic Layout  */
+/*  Basic Layout  */
+
+* {box-sizing: border-box;}
+
+input, button, textarea { outline: none; }
+
+body {
+	color: #FFFBFE;
+	background-color: #44633f;
+	font-size: 16px;
+	margin: 0;
+	font-family: 'lato', 'Open Sans', sans-serif;
+	line-height: 1.5;
+	text-align: center;	
+}
+
+.background-white{
+	background-color:#FFFBFE ;
+}
+
+.background-green-green{
+	background-color: #A3BBAD;
+}
+.background-green{
+	background-color:#2C8C66 ;
+}
+.background-olive{
+	background-color:#3F4B3B ;
+}
+.background-army-green{
+	background-color: #44633f;
+}
+
+h1 {
+	font-size: 2rem;
+	font-family: Ubuntu;
+}
+h2 {
+	font-size: 1.8rem;
+	color: #4a4a4a;
+	font-family: sans-serif;
+}
+h3 {
+	font-size: 1.6rem;
+	color: #4a4a4a;
+}
+h4 {
+	font-size: 1.4rem;
+	color: #4a4a4a;
+}
+h5 {
+	font-size: 1.3rem;
+}
+h6 {
+	font-size: 1.2rem;
+}
+
+p  {
+	font-size: 1rem;	
+}
+
+.padding-bottom {
+	margin-bottom: 15px;
+}
+.gamefont{
+	font-family: 'Press Start 2P', cursive;}
+
+.slider-form-child input[type=search] {
+	padding: 25px;
+	font-size: 20px;
+	width: 50%;
+	border-radius: 50px;
+	font-family: 'Press Start 2P', cursive;
+	background-color: #3F4B3B;
+	border: none;
+	color: #FFFBFE ;
+	text-align: center;
+
+}
+
+.slider-form-child input[type=submit] {
+	margin-left: 10px;
+	padding: 25px;
+	font-size: 20px;
+	width: 45%;
+	border-radius: 20px;
+	font-family: 'Press Start 2P', cursive;
+	background-color: #A3BBAD;
+	border: none;
+	color: #FFFBFE ;
+	text-align: center;
+	cursor: pointer;
+	
+}
+
+#pokemonList{
+	display: flex;
+	justify-content: space-between;
+}
+#pokemonList ul{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	list-style: none;
+	text-align: center;
+	font-size: 18px;
+}
+#pokemonList li{
+	width: 32%;
+	padding: 20px;
+	align-self: center;
+	text-align: left
+
+}
+#pokemonList button{
+	width: 100%;
+	padding: 10px;
+	color: white;
+	background-color: orange;
+	cursor: pointer;
+	border: none;
+	border-radius: 25px;
+	
+	
+
+}
+
+/* Layout */
+
+.container{
+	width: 100%;
+}
+
+.wrapper {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+.slider-form{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.slider-form-child {
+	display: flex;
+	flex-direction: column;
+	width: 45%;
+}
+.slider-form-gchild {
+	width: 100%;
+	padding-top: 30px;
+}
+
+.pokeInfo{
+	background-color:#444A37;
+	border-radius: 30px;
+	min-height:230px;
+	text-align: left;
+	padding-left: 35px;
+}
+
+.pokeInfo h3{
+	color: white;
+	margin: 0;
+	padding: 0;
+	
+}
+.pokeInfo ul{
+	list-style: none;
+	text-align: left;
+	font-size: 18px;
+}
+
+/* Media Queries*/
+
+/* Targeting most tablets */
+@media screen and  (min-width:768px) {
+	
+}
+
+/*Targering Desktop Systems */
+@media screen and (min-width:1024px){
+
+}
