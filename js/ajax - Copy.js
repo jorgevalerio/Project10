@@ -87,67 +87,6 @@ $('button.buttonPokemonList').click(function(evt) {
 			$('#pokemonList').html(pokeListHTML);
 			
 			
-	
-  $('a').click(function(stop){
-	  stop.preventDefault();
-	  
-	 var urlPokeSolo = $(this).attr("href");
-	  var modal = document.getElementById('myModal');
-	  var span = document.getElementsByClassName("close")[0];
-	  
-	  function openbox() {
-    modal.style.display = "block";
-}
-	  
-	  openbox();
-	  
-	  span.onclick = function() {
-    modal.style.display = "none";
-};
-	 
-	  console.log(urlPokeSolo);
-	  
-	  
-	  // third API Call will go here
-	  
-	  let pokeURL = urlPokeSolo ;	
-	  
-	  function pokemonInfo(dataFromApi){
-		let pokeName     = dataFromApi.name;
-		let pokeImageUrl = dataFromApi.sprites.front_default;
-		let pokeType     = dataFromApi.types[0].type.name;
-			
-			
-		var pokeInfo = '<div>';
-			pokeInfo += '<h3> Info: </h3>';
-			pokeInfo += '<ul>';
-			pokeInfo += '<li> <strong>Name: </strong>  ' + pokeName + '</li>';
-			pokeInfo += '<li><strong> Type: </strong>  ' + pokeType +'</li>';
-			pokeInfo += '</ul>';
-			pokeInfo += '<img src="' + pokeImageUrl + '">';
-			
-			$('.pokeInfo2').html(pokeInfo);
-
-		console.log(pokeName);
-		}
-	  
-	  $.getJSON(pokeURL,pokemonInfo);	
-	  
-	  ////////////
-	  
-	  window.onclick = function(event) {
-    if (event.target == modal) {
-		$('.pokeInfo2').html("1");
-        modal.style.display = "none";
-		
-    }
-};
-	  
-	  
-	  
-  });
-			
-			
 			
 			
 
@@ -168,36 +107,31 @@ $('button.buttonPokemonList').click(function(evt) {
 
 
 
+$(document).ready(function(){
+	
+	$("a").click(function() {
+    return false;
+})
+	
+  $('button.ok').click(function(stop){
+	  stop.preventDefault();
+	  
+	 var urlPokeSolo = $(this).attr("href");
+	 var href = $(this).attr('href');
+	  console.log(urlPokeSolo);
+	  console.log(href);
+	  
+  });
+	
+	
+	
+});
 
 
 
- 
 
 
 
-
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-	
-
-	
-		
 
 
 
