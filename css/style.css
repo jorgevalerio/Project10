@@ -97,6 +97,11 @@ p  {
 
 }
 
+.slider-form-child input[type=search]:focus {
+box-shadow: 0 0 5px rgba(255, 255, 0, 1);
+  border: 1px solid rgba(255, 203, 0, 1);
+}
+
 .slider-form-child input[type=submit] {
 	margin-left: 10px;
 	padding: 25px;
@@ -133,7 +138,7 @@ p  {
 }
 #pokemonList button{
 	width: 100%;
-	padding: 10px;
+	
 	color: white;
 	background-color: orange;
 	cursor: pointer;
@@ -148,7 +153,7 @@ p  {
 	
 	color: white;
 	background-color: #2C8C66;
-	cursor: pointer;
+	
 	
 	
 	
@@ -251,11 +256,15 @@ p  {
 a {
 	text-decoration: none;
 	color: #555;
+	display: block;
+	padding: 10px;
 }
 
 a:hover{
+	display: block;
 	text-decoration: none;
 	color: #fff;
+	
 }
 
 /* Media Queries*/
